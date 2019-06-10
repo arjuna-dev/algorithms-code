@@ -1,0 +1,1 @@
+var prompty = prompt('hey there')

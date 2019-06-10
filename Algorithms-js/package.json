@@ -1,0 +1,29 @@
+{
+  "name": "algorithms-module",
+  "version": "1.0.0",
+  "description": "Algorithms Module at CODE University 2019. Writing, understanding different search, sort, etc. algorithms.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandrocamus/algorithms_module_CODE.git"
+  },
+  "keywords": [
+    "algorithms",
+    "sort",
+    "search",
+    "algorithm",
+    "CODE",
+    "University"
+  ],
+  "author": "Alejandro Camus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jandrocamus/algorithms_module_CODE/issues"
+  },
+  "homepage": "https://github.com/jandrocamus/algorithms_module_CODE#readme",
+  "devDependencies": {}
+}
