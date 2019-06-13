@@ -1,10 +1,10 @@
 # From: https://interactivepython.org/runestone/static/pythonds/SortSearch/TheMergeSort.html
 # Descriptive image: https://www.geeksforgeeks.org/merge-sort/ 
 # Order of ops. 
-
+import time
 
 def mergeSort(alist):
-    print("Splitting ",alist)
+    # print("Splitting ",alist)
     if len(alist)>1:
         mid = len(alist)//2
         lefthalf = alist[:mid]
@@ -34,8 +34,18 @@ def mergeSort(alist):
             alist[k]=righthalf[j]
             j=j+1
             k=k+1
-    print("Merging ",alist)
+    # print("Merging ",alist)
 
 alist = [54,26,93,17,77,31,44,55,20]
+
+for i in range(100000):
+    alist.append(i)
+
+
+start = time.time()
 mergeSort(alist)
-print(alist)
+end = time.time()
+print(start)
+print("Runtime was: ", (end - start))
+# print(alist)
+

@@ -1,5 +1,3 @@
-
-
 function mergeSort(anArray) {
     if (anArray.length > 1) {
         var mid = Math.floor(anArray.length/2)
@@ -37,9 +35,22 @@ function mergeSort(anArray) {
             k++
         }
     }
-    console.log(JSON.stringify(anArray))
+    // console.log(JSON.stringify(anArray))
 }
 
 const array = [54,26,93,17,77,31,44,55,20]
 
+for (var i = 1; i<100000; i++) {
+    var aNumber = Math.floor(Math.random()*1000)
+    array.push(aNumber)
+}
+
+var start = console.time('test')
+// var start = new Date().getTime();
 mergeSort(array)
+// var end = new Date().getTime();
+var end = console.timeEnd('test')
+
+// console.log(start-end)
+
+// console.log("Call to doSomething took " + (end - start) + "units(ms?)")
